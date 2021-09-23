@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title":"Star Wars: Episode VII – The Force Awakens",
+        "rating":10.1,
+        "genre":"ciencia ficción",
+        "image":"star_Wars.jpg"
+    },
+    {
+        "id": 2,
+        "title":"A start is born",
+        "rating":9.1,
+        "genre":"drama",
+        "image": "A_Star_Is_Born.jpg"
+    },
+    {
+        "id": 3,
+        "title":"Grown Ups",
+        "rating":8.1,
+        "genre":"comedia",
+        "image": "Grown_Ups.jpg"
+    }
+]

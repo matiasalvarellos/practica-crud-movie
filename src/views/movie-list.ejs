@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movies</title>
+        <!-- bootstrap -->
+        <link 
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" 
+            crossorigin="anonymous"
+        >
+        <link rel="stylesheet" href="/stylesheets/style.css">
+    </head>
+    <body>
+        <%- include("partials/header.ejs") %>
+
+        <h1>Listado de Peliculas!</h1>
+
+        <main>
+            <section class="movie-wrap">
+                <a href="/movies/detail/???">
+                    <article>
+
+                        <div class="img-container">
+                            <img src="/images/error-img.jpg" alt="???">
+                        </div>
+
+                        <p>Información de pelicula:</p>
+                        <ul>
+                            <li>
+                                titulo:  
+                            </li>
+                            <li>
+                                raiting: 
+                            </li>
+                            <li>
+                                genero:  
+                            </li>
+                        </ul>
+
+                    </article>
+                </a> 
+            </section>
+            
+        </main>
+
+        <%- include("partials/footer.ejs") %> 
+    </body>
+</html>
