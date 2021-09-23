@@ -3,7 +3,7 @@ const router = express.Router();
 const movieController = require("../controller/moviesController");
 
 // router.get("???", movieController.???);
-// router.get("???", movieController.???);
+router.get("/detail/:id", movieController.detail);
 
 //rutas de creación
 // router.???("???", movieController.???);

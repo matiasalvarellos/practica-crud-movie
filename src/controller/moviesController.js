@@ -3,7 +3,7 @@ module.exports = {
         
     },
     detail: (req, res)=> {
-        
+        res.render("movie-detail.ejs")
     },
 
 };
