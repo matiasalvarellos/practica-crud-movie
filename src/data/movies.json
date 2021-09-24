@@ -1,16 +1,16 @@
 [
     {
-        "id": 2,
+        "id": 1,
         "title": "A start is born",
         "rating": 9.1,
         "genre": "drama",
         "image": "A_Star_Is_Born.jpg"
     },
     {
-        "id": 3,
+        "id": 2,
         "title": "E.T",
         "genre": "Drama",
         "rating": 12,
-        "image": "image-1632430456043.jpg"
+        "image": "image-1632430822986.jpg"
     }
 ]
