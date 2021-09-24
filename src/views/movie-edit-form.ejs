@@ -19,21 +19,21 @@
     <h1>Edición de pelicula:</h1> 
     <main>
       <div class="form-container">
-        <form action="???" method="POST" >
+        <form action="/movies/edit/<%= movie.id %>?_method=PUT" enctype="multipart/form-data" method="POST" >
   
           <div class="field-wrap">
             <label for="title">Title:</label>
-            <input type="text" name="title" id="title">
+            <input type="text" name="title" value="<%= movie.title %>" id="title">
           </div>
           
           <div class="field-wrap">
             <label for="genre">Genre:</label>
-            <input type="text" name="genre" id="genre">
+            <input type="text" name="genre" value="<%= movie.genre %>" id="genre">
           </div>
           
           <div class="field-wrap" >
             <label for="rating">Rating:</label>
-            <input type="number" name="rating" id="rating">
+            <input type="number" name="rating" value="<%= movie.rating %>" id="rating">
           </div>
 
           <div class="field-wrap" >

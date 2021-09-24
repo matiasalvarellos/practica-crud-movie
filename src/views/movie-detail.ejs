@@ -23,33 +23,35 @@
             <article>
 
               <div class="img-container">
-                <img src="/images/???" alt="???">
+                <img src="/images/<%= movie.image %>" alt="<%= movie.title %>">
               </div>
 
               <p>Caracteristicas:</p>
               <ul>
                 <li>
-                  Titulo:  
+                  Titulo: <%= movie.title %> 
                 </li>
                 <li>
-                  Genero: 
+                  Genero: <%= movie.genre %> 
                 </li>
                 <li>
-                  Raiting: 
+                  Raiting: <%= movie.rating %> 
                 </li>
               </ul>
 
               <div>
-                <a href="/movies/edit/??">
+                <a href="/movies/edit/<%= movie.id %>">
                   <button type="button">Editar</button>
                 </a>
               </div>
               <div>
-                <form action="???" method="???">
+
+                <form action="/movies/delete/<%= movie.id %>?_method=DELETE" method="POST">
                   <button type="submit">
                     borrar
                   </button>
                 </form>
+
               </div>
 
             </article>

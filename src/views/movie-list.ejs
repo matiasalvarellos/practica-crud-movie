@@ -21,28 +21,30 @@
 
         <main>
             <section class="movie-wrap">
-                <a href="/movies/detail/???">
-                    <article>
-
-                        <div class="img-container">
-                            <img src="/images/error-img.jpg" alt="???">
-                        </div>
-
-                        <p>Información de pelicula:</p>
-                        <ul>
+                <% for (let movie of movies) { %>
+                    <a href="/movies/detail/<%= movie.id %>">
+                        <article>
+                            
+                            <div class="img-container">
+                                <img src="/images/<%= movie.image %>" alt="<%= movie %>">
+                            </div>
+                            
+                            <p>Información de pelicula:</p>
+                            <ul>
                             <li>
-                                titulo:  
+                                titulo: <%= movie.title %>   
                             </li>
                             <li>
-                                raiting: 
+                                raiting: <%= movie.rating %> 
                             </li>
                             <li>
-                                genero:  
+                                genero:  <%= movie.genre %> 
                             </li>
                         </ul>
-
+                        
                     </article>
                 </a> 
+                <% } %>
             </section>
         </main>
         <%- include("partials/footer.ejs") %> 
